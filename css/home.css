@@ -10,14 +10,18 @@ body {
 	font-size: 36px;
 	font-weight: 800;
 	margin: 5px auto;
+	margin-top: 10vh;
+	padding: 0 30px;
+	background-color: #FFF;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .input-name {
-	width: 10rem;
+	width: 15rem;
 	height: 1.5rem;
-	margin: 10px auto;
+	margin: 20px auto;
 	display: flex;
+	text-align: center;
 }
