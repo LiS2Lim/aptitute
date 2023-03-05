@@ -1,34 +1,62 @@
 body {
 	font-family: 'Noto Serif', serif;
-}
-
-a {
-	text-decoration: none;
+	word-break: keep-all;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .btn {
-	width: 8rem;
-	height: 3rem;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid #000;
-	border-radius: 20px;
-	background-color: #59E807;
-	color: #000;
-	font-size: 24px;
 	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.4;
+	text-decoration: none;
+	text-align: center;
 	cursor: pointer;
-	box-shadow: 0 5px 5px #000;
+	user-select: none;
 	transition: .1s;
-	margin: 0 auto;
 }
 
-.btn:active {
-	box-shadow: 0 2px 2px #000;
-	margin-top: 5px;
+.btn-gray {
+	max-width: 250px;
+	height: 50px;
+	background-color: #F2F4F6;
+	box-shadow: 0 5px 5px #DFE1E2;
+	color: #444;
 }
 
-.btn:hover {
-	background-color: #69F817
+.btn-gray:active {
+	box-shadow: 0 4px 0 #DFE1E2;
+	transform: translateY(10px);
+}
+
+.btn-orange {
+	max-width: 500px;
+	height: 70px;
+	background-color: #FFA32D;
+	box-shadow: 0 5px 5px #000;
+	color: #FFF;
+}
+
+.btn-orange:active {
+	box-shadow: 0 4px 0 #E66000;
+	transform: translateY(10px);
+}
+
+.btn-green {
+	max-width: 500px;
+	height: 70px;
+	background-color: #32BFA1;
+	box-shadow: 0 5px 5px #000;
+	color: #FFF;
+}
+
+.btn-green:active {
+	box-shadow: 0 4px 0 #299A82;
+	transform: translateY(10px);
 }

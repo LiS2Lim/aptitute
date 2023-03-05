@@ -4,12 +4,20 @@ body {
 	background-repeat: no-repat;
 }
 
+#userName {
+	max-width: 300px;
+	margin-left: auto;
+	margin-bottom: 30px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
 .progress {
-	max-width: 500px;
+	max-width: 550px;
 	height: 20px;
 	margin: 0 auto;
 	margin-bottom: 60px;
-	border: 1px soild #000;
+	border: 1px solid #E3E3E3;
 	border-radius: 10px;
 	background-color: #FFF;
 }
@@ -19,6 +27,7 @@ body {
 	height: 20px;
 	background-color: #FFB103;
 	border-radius: 10px;
+	transition: .2s;
 }
 
 .question-box {
@@ -26,20 +35,28 @@ body {
 	margin: 0 auto;
 	padding: 40px 60px;
 	border-radius: 20px;
+	box-shadow: 0 4px 25px #DDE2E8;
 	background-color: #FFF;
 }
 
 .question-box > .number {
+	margin-bottom: 30px;
+	font-weight: 900;
+	font-size: 30px;
+	text-align: center;
+	color: #2EC7A6;
 }
 
 .question-box > .question {
+	margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+	word-wrap: break-word;
 }
 
 .question-box > .choice {
-}
-
-.question-box > .choice1 {
-}
-
-.question-box > .choice2 {
+	border-radius: 120px;
+	font-size: 17px;
 }
