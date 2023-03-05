@@ -1,0 +1,45 @@
+body {
+	background-image: url("../images/questions_bg.jpg");
+	background-position: top center;
+	background-repeat: no-repat;
+}
+
+.progress {
+	max-width: 500px;
+	height: 20px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	border: 1px soild #000;
+	border-radius: 10px;
+	background-color: #FFF;
+}
+
+.progress > .value {
+	width: 10%;
+	height: 20px;
+	background-color: #FFB103;
+	border-radius: 10px;
+}
+
+.question-box {
+	max-width: 420px;
+	margin: 0 auto;
+	padding: 40px 60px;
+	border-radius: 20px;
+	background-color: #FFF;
+}
+
+.question-box > .number {
+}
+
+.question-box > .question {
+}
+
+.question-box > .choice {
+}
+
+.question-box > .choice1 {
+}
+
+.question-box > .choice2 {
+}
