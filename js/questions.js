@@ -12,7 +12,12 @@ const choice3El = document.querySelector('.choice3');
 const choice4El = document.querySelector('.choice4');
 
 let currentNumber = 0
-let result = ''
+let result = {
+	"A": 23,
+	"B": 24,
+	"C": 24,
+	"D": 25,
+}
 
 const render = () => {
 	const question = questions[currentNumber]
@@ -23,25 +28,26 @@ const render = () => {
 
 const nextQuestion = (choiceNumber) => {
 	if (currentNumber === questions.length -1) {
-		location.href = '/result'
+		result[questions[currentNumber].type] = result[questions[currentNumber].type] - choiceNumber
+		location.href = `/result?A=${result.A}&B=${result.B}&C=${result.C}&D=${result.D}`
 		return
 	}
-	result = result + choiceNumber;
+	result[questions[currentNumber].type] = result[questions[currentNumber].type] - choiceNumber
 	currentNumber = currentNumber + 1;
 	render();
 }
 
 choice1El.addEventListener('click', () => {
-	nextQuestion(4);
+	nextQuestion(1);
 })
 choice2El.addEventListener('click', () => {
-	nextQuestion(3);
-})
-choice3El.addEventListener('click', () => {
 	nextQuestion(2);
 })
+choice3El.addEventListener('click', () => {
+	nextQuestion(3);
+})
 choice4El.addEventListener('click', () => {
-	nextQuestion(1);
+	nextQuestion(4);
 })
 
 labelNameEl.innerText = userName + " 様"
