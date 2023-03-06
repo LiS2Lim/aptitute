@@ -48,10 +48,23 @@ body {
 	transform: translateY(10px);
 }
 
+.btn-orange2 {
+	max-width: 500px;
+	height: 70px;
+	background-color: #FCBF6F;
+	box-shadow: 0 5px 5px #000;
+	color: #FFF;
+}
+
+.btn-orange2:active {
+	box-shadow: 0 4px 0 #E66000;
+	transform: translateY(10px);
+}
+
 .btn-green {
 	max-width: 500px;
 	height: 70px;
-	background-color: #32BFA1;
+	background-color: #91FFE7;
 	box-shadow: 0 5px 5px #000;
 	color: #FFF;
 }
@@ -59,4 +72,32 @@ body {
 .btn-green:active {
 	box-shadow: 0 4px 0 #299A82;
 	transform: translateY(10px);
+}
+
+.btn-green2 {
+	max-width: 500px;
+	height: 70px;
+	background-color: #32BFA1;
+	box-shadow: 0 5px 5px #000;
+	color: #FFF;
+}
+
+.btn-green2:active {
+	box-shadow: 0 4px 0 #299A82;
+	transform: translateY(10px);
+}
+
+dialog {
+	font-size: 24px;
+}
+
+dialog button {
+	margin: 0 auto;
+	margin-top: 30px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	cursor: pointer;
 }

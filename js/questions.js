@@ -8,6 +8,8 @@ const numberEl = document.querySelector('.number');
 const questionEl = document.querySelector('.question');
 const choice1El = document.querySelector('.choice1');
 const choice2El = document.querySelector('.choice2');
+const choice3El = document.querySelector('.choice3');
+const choice4El = document.querySelector('.choice4');
 
 let currentNumber = 0
 let result = ''
@@ -18,7 +20,7 @@ const render = () => {
 	numberEl.innerHTML = question.number
 	choice1El.innerHTML = question.choices[0].text
 	choice2El.innerHTML = question.choices[1].text
-	valueEl.style.width = (currentNumber+1) * 10 + '%'
+	valueEl.style.width = (currentNumber+1) * 2.5 + '%'
 }
 
 const nextQuestion = (choiceNumber) => {
