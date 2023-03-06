@@ -18,8 +18,6 @@ const render = () => {
 	const question = questions[currentNumber]
 	questionEl.innerHTML = question.question
 	numberEl.innerHTML = question.number
-	choice1El.innerHTML = question.choices[0].text
-	choice2El.innerHTML = question.choices[1].text
 	valueEl.style.width = (currentNumber+1) * 2.5 + '%'
 }
 
@@ -34,9 +32,15 @@ const nextQuestion = (choiceNumber) => {
 }
 
 choice1El.addEventListener('click', () => {
-	nextQuestion(0);
+	nextQuestion(4);
 })
 choice2El.addEventListener('click', () => {
+	nextQuestion(3);
+})
+choice3El.addEventListener('click', () => {
+	nextQuestion(2);
+})
+choice4El.addEventListener('click', () => {
 	nextQuestion(1);
 })
 
