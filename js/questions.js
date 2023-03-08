@@ -29,7 +29,8 @@ const render = () => {
 const nextQuestion = (choiceNumber) => {
 	if (currentNumber === questions.length -1) {
 		result[questions[currentNumber].type] = result[questions[currentNumber].type] - choiceNumber
-		location.href = `/result?A=${result.A}&B=${result.B}&C=${result.C}&D=${result.D}`
+		const target = Object.entries(result).sort(([,a],[,b])=> b-a)
+		location.href = `/result?first=${target[0]}&second=${target[1]}`
 		return
 	}
 	result[questions[currentNumber].type] = result[questions[currentNumber].type] - choiceNumber

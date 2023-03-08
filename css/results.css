@@ -1,0 +1,17 @@
+body {
+	background-image: url('../images/result_bg.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.title{
+	text-align: center;
+}
+
+.job-title {
+	text-align: center;
+}
+
+.job-discription {
+	text-align: center;
+}

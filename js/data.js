@@ -200,8 +200,8 @@ export const questions = [
 		question: '何事でも完全でないと気がすまない',
 	},
 ]
-export const results = [
-	{
+export const results = { 
+	A: {
 		title: 'コントローラー',
 		results: [
 			'決断力がある',
@@ -211,7 +211,7 @@ export const results = [
 		],
 		jobs: ['マネージャー、管理職'],
 	},
-	{
+	B: {
 		title: 'プロモーター',
 		results: [
 			'社交的である',
@@ -221,7 +221,7 @@ export const results = [
 		],
 		jobs: ['営業、窓口対応'],
 	},
-	{
+	C: {
 		title: 'サポーター',
 		results: [
 			'協調的である',
@@ -231,7 +231,7 @@ export const results = [
 		],
 		jobs: ['事務職、アシスタント'],
 	},
-	{
+	D: {
 		title: 'アナライザー',
 		results: [
 			'論理的である',
@@ -240,5 +240,5 @@ export const results = [
 			'問題解決に長けている',
 		],
 		jobs: ['コーディネーター、会計'],
-	},
-]
+	}
+};
