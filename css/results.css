@@ -4,7 +4,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-.title{
+.title {
 	text-align: center;
 	color:red;
 	font-size: 40px;
@@ -13,12 +13,16 @@ body {
 	margin: 10px;
 }
 
+.sub-title {
+	text-align: center;
+}
+
 .job-discription {
 	max-width: 500px;
 	text-align: center;
 	margin: 10px auto;
 	padding: 10px;
-	background-color: #C3C3C3;
+	background-color: #FFB103;
 	color: #000;
 	font-size: 24px;
 	font-weight: 600;
