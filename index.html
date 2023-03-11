@@ -18,18 +18,25 @@
 
 </head>
 <body>
-	<h1 class="title">
-		業務適性検査
-	</h1>
-	<input class="input-name" type="text" placeholder="お名前をご記入ください" id="name" />
-	<div id="start" class="btn btn-gray">
-		開始
-	</div>
-	<dialog>
-		お名前をご記入ください
-			<form method="dialog">
-				<button>閉じる</button>
-			</form>
-	</dialog>
+	<section>
+		<div class="form-box">
+			<div class="form-items">
+				<h1>業務適性検査</h1>
+				<div class="input-box">
+					<input type="text" id="name" required/>
+					<label for="name">お名前</label>
+				</div>
+				<div id="start" class="btn btn-gray">
+					開始
+				</div>
+			</div>
+		</div>
+		<dialog>
+			お名前をご記入ください
+				<form method="dialog">
+					<button>閉じる</button>
+				</form>
+		</dialog>
+	</section>
 </body>
 </html>
